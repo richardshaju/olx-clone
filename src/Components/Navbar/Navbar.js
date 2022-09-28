@@ -1,8 +1,10 @@
 import React from 'react'
-import Arrow from './assets/Arrow'
-import OlxLogo from './assets/Olx-logo'
-import Search from './assets/Search'
-import SellButton from './assets/sell-button'
+import Arrow from '../assets/Arrow'
+import OlxLogo from '../assets/Olx-logo'
+import Search from '../assets/Search'
+import SellButton from '../assets/sellButton'
+import SellButtonPlus from '../assets/sellPlus'
+
 import './Navbar.css'
 
 function Navbar() {
@@ -14,7 +16,6 @@ function Navbar() {
             <div className='dropdown'>
                 <div className='country-search'>
                     <Search fill="#00000" width="18px"></Search>
-                    <Arrow />
                 </div>
                 <select name="" id="">
 
@@ -33,6 +34,7 @@ function Navbar() {
                 <Arrow />
                 <p>Login</p>
                 <SellButton/>
+                <SellButtonPlus/>
             </div>
         </div>
     )

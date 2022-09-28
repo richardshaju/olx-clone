@@ -1,0 +1,31 @@
+.banner{
+    width: 100%;
+    height: auto;
+}
+.categories{
+    float: left;
+    align-items: center;
+    padding: 0px 20px 0px 27px; 
+    display: flex;
+    
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.category-list{
+    height: 40px;
+    FONT-SIZE: 15px;
+    display: flex;
+}
+.items p{
+    margin-right: 23px;
+}
+.category-list h4{
+    font-size:14px;
+}
+.banner img{
+    width:100%;
+}

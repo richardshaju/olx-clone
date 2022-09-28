@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+
+}
+.about{
+    display: flex;
+    background: #ebeeef;
+    padding: 28px 57px 10px;
+    justify-content: space-evenly;
+}
+.column{
+    display: grid;
+    justify-items: start;
+
+}.column span{
+    color: #002f34;
+    font-size: 15px;
+    font-weight: 500;
+}
+.column p {
+    font-size: 13px;
+}
+.copyright{
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    background: #002f34;
+    height: 20px;
+    padding: 17px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright span{
+    font-weight: 600;
+}

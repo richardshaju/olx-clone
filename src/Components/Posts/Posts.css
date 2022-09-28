@@ -1,0 +1,59 @@
+.posts {
+    margin: 60px 66px 15px;
+    height: 365px;
+    background-color: #ebeeef;
+    width: 90%;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px 18px;
+}
+
+.post-header h3 {
+    font-size: 25px;
+}
+
+.products {
+    padding: 0rem 1rem 1rem 1rem;
+display: flex;
+justify-content:space-around;
+}
+
+.product {
+    height: 17rem;
+    border-style: solid;
+    border-radius: 4px;
+    width: 18rem;
+    border-width: thin;
+    border-color: #9f9f9f;
+    background: #fff;
+}
+.top img{
+    max-width: 16rem;
+}
+.top{
+    padding-top: 9px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.2rem;
+}
+.bottom h4{
+    font-size: 23px;
+}
+.fresh{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.fresh-post{
+    margin: 60px 66px 15px;
+    height: auto;
+    width: 90%;
+}
