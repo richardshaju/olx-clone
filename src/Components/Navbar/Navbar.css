@@ -20,7 +20,7 @@ select{
 .dropdown{
     margin-left: 1rem;
 }
-input{
+.navbar input{
     width: 40rem;
     height: 2.7rem;
     border-width: 2px;

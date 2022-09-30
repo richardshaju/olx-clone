@@ -1,11 +1,10 @@
 import React from 'react'
 
-export default  function OlxLogo() {
+export default  function OlxLogo(props) {
     return(  
           <svg
-        width="48px"
-        height="48px"
-    
+        width={props.width ? props.width :'48px'}
+        height={props.height ? props.height :'48px'}
         viewBox="0 0 1024 1024"
         data-aut-id="icon"
         className
