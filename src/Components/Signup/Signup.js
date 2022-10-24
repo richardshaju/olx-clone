@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { FirebaseContext } from '../../Store/FirebaseContext'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate ,Link} from 'react-router-dom'
 import OlxLogo from '../assets/Olx-logo'
 import './Signup.css'
 function Login() {
@@ -42,6 +42,7 @@ function Login() {
             </div>
             <div className="button">
               <button  >SIGN IN</button>
+              <Link to="/login">  <button style={{background:"white" , color:'black'}}>Already have an Account?</button></Link>
             </div>
           </form>
           <div className="footer">
