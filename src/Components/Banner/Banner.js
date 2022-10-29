@@ -20,7 +20,7 @@ function Banner() {
         </div>
       </div>
       <div className="image">
-        <img src={require('../assets/banner_poster.webp')} alt="" />
+
       </div>
     </div>
   )

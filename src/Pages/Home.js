@@ -12,8 +12,7 @@ function Home() {
     <div>
       <Navbar />
       <Banner />
-      <Posts />
-      <Fresh/>
+     
 <Footer/>
       
     </div>

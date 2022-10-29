@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Signup from './Pages/SignUpPage';
 import Login from './Pages/LoginPage';
 import { AuthContext, FirebaseContext } from './Store/FirebaseContext'
+import Sell from './Components/Sell/Sell';
 
 function App() {
   const {user , setUser} = useContext(AuthContext)
@@ -18,9 +19,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/olx-clone" element={<Home />} />
           <Route path="signup" element={<Signup />} />
-          <Route path="login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sell" element={<Sell />} />
         </Routes>
       </Router>
     </div >

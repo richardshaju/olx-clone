@@ -1,5 +1,6 @@
 .banner{
     width: 100%;
+    padding-top: 3.7rem;
     height: auto;
 }
 .categories{
@@ -20,6 +21,13 @@
     FONT-SIZE: 15px;
     display: flex;
 }
+
+@media screen and (max-device-width: 425px) {
+    .category-list {
+      display: none;
+    }
+  }
+
 .items p{
     margin-right: 23px;
 }
@@ -28,4 +36,20 @@
 }
 .banner img{
     width:100%;
+}
+.image{
+    background-image: url('../assets/banner_poster.webp');
+    background-position-x: center;
+    background-size: cover;
+    height: 11rem;
+    width: 100%;
+}
+
+@media screen and (max-device-width: 425px) {
+    .image{
+        background-position-x: right;
+        background-size: cover;
+        height: 11rem;
+        width: 100%;
+    }
 }

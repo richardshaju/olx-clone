@@ -7,8 +7,28 @@
     color: #002f34;
 }
 
+@media screen and (max-device-width: 425px) {
+    .navbar {
+        height: 60px;
+        position: fixed;
+    }
+}
+
+
 .logo {
     padding-left: 2rem;
+}
+
+@media screen and (max-device-width: 425px) {
+    .logo {
+        padding-left: 0.2rem;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .logo svg {
+        height: 2.4rem;
+    }
 }
 
 .dropdown {
@@ -19,7 +39,6 @@
     border-radius: 4px;
     background-color: #fff;
 }
-
 
 select .visible {
     visibility: unset;
@@ -32,10 +51,14 @@ select .unvisible {
 .dropdown {
     margin-left: 1rem;
     display: flex;
-
     cursor: pointer;
-
     justify-content: center;
+}
+
+@media screen and (max-device-width: 425px) {
+    .dropdown {
+        display: none;
+    }
 }
 
 .dropdown:focus-within {
@@ -95,17 +118,20 @@ select .unvisible {
     height: 2.5rem;
     display: flex;
     align-items: center;
-     padding: 0px 10px;
+    padding: 0px 10px;
 }
-.locations .list{
+
+.locations .list {
     display: flex;
     flex-direction: column;
     text-align: left;
     font-size: 16px;
 }
-.locations .span{
+
+.locations .span {
     margin-right: 5px;
 }
+
 .locations .list p {
     height: 51px;
     width: 14rem;
@@ -113,9 +139,11 @@ select .unvisible {
     align-items: center;
     padding: 0px 10px;
 }
-.locations .list p:hover{
+
+.locations .list p:hover {
     background: #c8f8f6;
 }
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -145,6 +173,20 @@ select .unvisible {
     align-items: center;
 }
 
+@media screen and (max-device-width: 425px) {
+    .search-bar {
+        padding-left: 0rem;
+    }
+}
+
+
+@media screen and (max-device-width: 425px) {
+    .search-bar input {
+        padding-left: 0rem;
+        display: none;
+    }
+}
+
 .search {
     background: #002f34;
     height: 47px;
@@ -157,6 +199,21 @@ select .unvisible {
     justify-content: center;
 }
 
+@media screen and (max-device-width: 425px) {
+    .search {
+        height: 22px;
+        width: 22px;
+        position: unset;
+        margin: 0px 4px;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .search svg {
+        height: 17px;
+
+    }
+}
 
 
 .right {
@@ -165,19 +222,106 @@ select .unvisible {
     align-items: center;
 }
 
+@media screen and (max-device-width: 425px) {
+    .right {
+        margin-left: 0rem;
+        right: 1px;
+        position: fixed;
+    }
+}
+
+.right svg {
+    height: 1.5rem;
+}
+
 .right p {
     font-size: 15px;
     font-weight: 700;
     margin-right: 0.5rem;
 }
 
+@media screen and (max-device-width: 425px) {
+    .right p {
+        font-size: 10px;
+    }
+}
+
 .right a {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 650;
     text-decoration: none;
     color: #002f34;
     margin-left: 2rem;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-device-width : 425px) {
+    .right a {
+        font-size: 13px;
+        font-weight: 650;
+        text-decoration: none;
+        color: #002f34;
+        display: flex;
+        margin-left: unset;
+        margin-right: unset;
+        align-items: center;
+    }
+}
+
+.account {
+    display: grid;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.account svg {
+    height: 1rem;
+    margin-top: 4px;
+}
+
+.account div {
+    max-width: 10rem;
+    background: #f5f7f7;
+    height: 2rem;
+    width: 6.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    position: absolute;
+    font-weight: 500;
+    margin-top: 2.3rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+@media screen and (max-device-width : 425px) {
+    .account div {
+        max-width: 10rem;
+        background: #f5f7f7;
+        height: rem;
+        width: 5.1rem;
+        display: flex;
+        font-size: 13px;
+        position: absolute;
+        font-weight: 500;
+        margin-top: 1.4rem;
+        cursor: pointer;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.account div:hover {
+    background: rgb(102, 240, 240);
+}
+
+.right span {
+    font-weight: 700;
+    margin-right: 0.3rem;
 }
 
 .underline {
@@ -220,9 +364,55 @@ select .unvisible {
     align-items: center;
 }
 
+@media screen and (max-device-width: 425px) {
+    .sell {
+        position: unset;
+        margin-left: 0rem;
+        margin: 0px 8px;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .sell-title {
+        display: flex;
+        z-index: inherit;
+        align-items: center;
+        margin-right: -3rem;
+
+    }
+}
+
+.sell svg {
+    height: 25px;
+}
+
+@media screen and (max-device-width: 425px) {
+    .sell svg {
+        height: 25px;
+    }
+}
+
+.sell-title svg {
+    height: 11px;
+}
+
+@media screen and (max-device-width: 425px) {
+    .sell-title svg {
+        height: 11px;
+    }
+}
+
+
 .sell p {
     margin-left: 6px;
 }
+
+@media screen and (max-device-width: 425px) {
+    .sell p {
+        margin-left: unset;
+    }
+}
+
 
 .test {
     background: aqua;

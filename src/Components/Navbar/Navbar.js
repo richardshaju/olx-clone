@@ -13,12 +13,16 @@ function Navbar() {
     const { user } = useContext(AuthContext)
     const { firebase } = useContext(FirebaseContext)
     const [condition, setcondition] = useState(false)
+    const [account, setaccount] = useState(false)
     const [location, setLocation] = useState("")
     function show() {
         condition ? setcondition(false) : setcondition(true)
         console.log("Worked")
     }
-
+    function LogOut() {
+        firebase.auth().signOut()
+        navigate('/login')
+    }
     return (
         <div className='navbar'>
             <div className='logo'>
@@ -52,7 +56,6 @@ function Navbar() {
                     <span onClick={show} className={condition ? "arrow" : 'default'}>
                         <Arrow />
                     </span>
-
                 </div>
             </div>
             <div className='search-bar'>
@@ -62,22 +65,22 @@ function Navbar() {
                 </div>
             </div>
             <div className='right'>
-            {user && <span onClick={() => {
-                    firebase.auth().signOut();
-                    navigate('/login')
-                }}>LOGOUT</span>}
-                <p>ENGLISH</p>
-                <Arrow />
-                <a href={user ? '#' : '/login'} className='underline'>{user ? user.displayName : 'Login'}</a>
-            
-                <div className='sell'>
-                    <SellButtonPlus />
-                    <p>SELL</p>
+                <a href="/sell"><div className='sell' >
+                    <div className="sell-title">
+                        <SellButtonPlus />
+                        <p>SELL</p>
+                    </div>
+                    <SellButton />
+                </div></a>
+                <div className="account">
+                    <a onClick={() => { account ? setaccount(false) : setaccount(true) }}>{user ? user.displayName : 'Account'} <Arrow />
+                    </a>
+                    {account ? <div href="" onClick={() => { user ? LogOut() : navigate('/login') }}>{user ? 'Logout' : 'Login'} </div> : null}
                 </div>
-                <SellButton />
             </div>
         </div>
     )
 }
 
 export default Navbar
+
