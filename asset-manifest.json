@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/olx-clone/static/css/main.60e5f341.css",
+    "main.js": "/olx-clone/static/js/main.7283100b.js",
+    "static/js/787.4341f9cd.chunk.js": "/olx-clone/static/js/787.4341f9cd.chunk.js",
+    "static/media/banner_poster.webp": "/olx-clone/static/media/banner_poster.48faf203503b1628c3b6.webp",
+    "index.html": "/olx-clone/index.html",
+    "main.60e5f341.css.map": "/olx-clone/static/css/main.60e5f341.css.map",
+    "main.7283100b.js.map": "/olx-clone/static/js/main.7283100b.js.map",
+    "787.4341f9cd.chunk.js.map": "/olx-clone/static/js/787.4341f9cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60e5f341.css",
+    "static/js/main.7283100b.js"
+  ]
+}
