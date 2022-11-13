@@ -1,6 +1,6 @@
 .posts {
     margin: 60px 66px 15px;
-    height: 365px;
+    height: auto;
     background-color: #ebeeef;
     width: 90%;
 }
@@ -20,10 +20,12 @@
 .products {
     padding: 0rem 1rem 1rem 1rem;
 display: flex;
-justify-content:space-around;
+justify-content: initial;
+flex-wrap: wrap;
 }
 
 .product {
+    margin: 5px 2px;
     height: 17rem;
     border-style: solid;
     border-radius: 4px;
@@ -33,12 +35,13 @@ justify-content:space-around;
     background: #fff;
 }
 .top img{
-    max-width: 16rem;
+    width: auto;
+    height: 10rem;
 }
 .top{
     padding-top: 9px;
 }
-.bottom{
+.product .bottom{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -53,7 +56,7 @@ justify-content:space-around;
     margin-bottom: 1rem;
 }
 .fresh-post{
-    margin: 60px 66px 15px;
+    margin: 0px 66px 15px;
     height: auto;
     width: 90%;
 }

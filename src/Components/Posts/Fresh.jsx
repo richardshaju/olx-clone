@@ -4,7 +4,7 @@ function Fresh() {
   return (
     <div className='fresh-post'>
         <div className="post-header">
-                    <h3>Fresh Reccomndation</h3>
+                    <h3>Fresh Recommendations</h3>
                 </div>
                 <div className="fresh">
                     <div className="product">

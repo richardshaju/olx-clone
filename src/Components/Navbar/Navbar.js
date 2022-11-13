@@ -14,6 +14,7 @@ function Navbar() {
     const { firebase } = useContext(FirebaseContext)
     const [condition, setcondition] = useState(false)
     const [account, setaccount] = useState(false)
+    const [bar, setbar] = useState(false)
     const [location, setLocation] = useState("")
     function show() {
         condition ? setcondition(false) : setcondition(true)
@@ -25,6 +26,7 @@ function Navbar() {
     }
     return (
         <div className='navbar'>
+
             <div className='logo'>
                 <OlxLogo />
             </div>
@@ -58,6 +60,14 @@ function Navbar() {
                     </span>
                 </div>
             </div>
+            <div className='search-mobile search' onClick={() => { setbar(true) }} >
+                <Search fill="#ffffff" width="25px"></Search>
+            </div>
+            <div className='mobile-searchbar' style={{ display: bar ? "flex" : "none" }}>
+                <i onClick={() => { setbar(false) }} className="fa fa-times" aria-hidden="true"></i>
+                <input type="text" placeholder='Find Cars, Mobile Phones, ...' />
+                <Search fill="#000" width="25px"></Search>
+            </div>
             <div className='search-bar'>
                 <input type="text" placeholder='Find Cars, Mobile Phones, ...' />
                 <div className='search'>
@@ -65,18 +75,21 @@ function Navbar() {
                 </div>
             </div>
             <div className='right'>
-                <a href="/sell"><div className='sell' >
-                    <div className="sell-title">
-                        <SellButtonPlus />
-                        <p>SELL</p>
-                    </div>
-                    <SellButton />
-                </div></a>
+
                 <div className="account">
                     <a onClick={() => { account ? setaccount(false) : setaccount(true) }}>{user ? user.displayName : 'Account'} <Arrow />
                     </a>
                     {account ? <div href="" onClick={() => { user ? LogOut() : navigate('/login') }}>{user ? 'Logout' : 'Login'} </div> : null}
                 </div>
+                <a href="/sell">
+                    <div className='sell' >
+                        <div className="sell-title">
+                            <SellButtonPlus />
+                            <p>SELL</p>
+                        </div>
+                        <SellButton />
+                    </div>
+                </a>
             </div>
         </div>
     )

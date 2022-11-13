@@ -13,7 +13,7 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault()
         firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
-            navigate('/')
+            navigate('/olx-clone')
         }).catch((err) => {
             alert(err.message)
         })

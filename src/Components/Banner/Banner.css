@@ -44,12 +44,16 @@
     height: 11rem;
     width: 100%;
 }
+@media screen and (max-device-width: 1440px) {
+    .image{
+        background-position-x: right;
+        height: 16rem;
 
+    }
+}
 @media screen and (max-device-width: 425px) {
     .image{
         background-position-x: right;
-        background-size: cover;
         height: 11rem;
-        width: 100%;
     }
 }

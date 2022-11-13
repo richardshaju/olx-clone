@@ -12,9 +12,9 @@ function Home() {
     <div>
       <Navbar />
       <Banner />
-     
-<Footer/>
-      
+      <Posts />
+      <Footer />
+
     </div>
   )
 }
