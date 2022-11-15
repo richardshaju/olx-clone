@@ -14,6 +14,7 @@ function Sell() {
     const [proName, setproName] = useState('')
     const [category, setcategory] = useState('')
     const [price, setprice] = useState('')
+    const [description, setdescription] = useState('')
     const [image, setimage] = useState(null)
     const date = new Date()
     const handleSubmit = () => {
@@ -24,6 +25,7 @@ function Sell() {
                     proName,
                     category,
                     price,
+                    description,
                     url,
                     userId : user.uid,
                     createdOn : date.toDateString()
@@ -45,7 +47,9 @@ function Sell() {
 
                             <input type="text" name="name" value={proName} onChange={(e) => setproName(e.target.value)} placeholder='Product Name' />
                             <input type="text" name='category' value={category} onChange={(e) => setcategory(e.target.value)} placeholder='Category' />
-                            <input type="tex" name='price' value={price} onChange={(e) => setprice(e.target.value)} placeholder='Price' />
+                            <textarea type="text" name='description' value={description} onChange={(e) => setdescription(e.target.value)} placeholder='Type something about the product....' />
+                            <input type="text" name='price' value={price} onChange={(e) => setprice(e.target.value)} placeholder='Price' />
+                            
 
                             <img width="5rem" src={image ? URL.createObjectURL(image) : ''} />
 

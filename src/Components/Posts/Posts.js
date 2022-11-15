@@ -34,7 +34,7 @@ function Posts() {
                     return <div className="product" 
                     onClick={() => {
                         setpostDetails(product)
-                        navigate('./post')
+                        navigate('/post')
                     }} >
                         <div className="top">
                             <img src={product.url} alt="" />

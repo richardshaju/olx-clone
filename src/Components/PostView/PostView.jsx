@@ -20,13 +20,24 @@ function PostView() {
         <div class="images">
           <img src={postDetails.url} />
         </div>
+        <div class="mobile-price">
+          <div class="top">
+            <h2>₹ {postDetails.price}</h2>
+            <div class="icon">
+              <i class="fa-solid fa-share-nodes"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <p>{postDetails.proName}</p>
+          <div className="bottom">
+            <p>Kundoor mala</p>
+            <p>Today</p>
+          </div>
+        </div>
         <div className="content">
           <h4>Description</h4>
           <p>
-            Most demanded item <br />
-            Top quality 7A <br />
-            No any complaints <br />
-            Size UK 8.5 <br />
+            {postDetails.description}
           </p>
         </div>
       </div>
@@ -51,8 +62,10 @@ function PostView() {
           </div>
           {userDetails && <div className="profile">
             <img src={require('./avatar.png')} alt="" />
-            <h3>{userDetails.username}</h3> <br />
+            <div style={{display:'flex' , flexDirection:'column'}}>
+            <h3>{userDetails.username}</h3>
             <p>{userDetails.mobile}</p>
+            </div>
           </div>}
           <div className="chat">
             <button>Chat with seller</button>

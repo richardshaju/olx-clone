@@ -1,12 +1,26 @@
 .post-view {
     background-color: #f2f4f5;
-    padding: 100px 30px;
+    padding: 70px 10px;
     display: flex;
     justify-content: space-around;
 }
 
+@media screen and (max-device-width: 425px) {
+    .post-view {
+        padding: 59px 0px 10px 0px;
+        flex-direction: column;
+    }
+
+}
+
 .column-1 {
     width: 65%;
+}
+
+@media screen and (max-device-width: 425px) {
+    .column-1 {
+        width: 100%;
+    }
 }
 
 .column-1 .images {
@@ -17,8 +31,20 @@
     border-radius: 5px;
 }
 
+@media screen and (max-device-width: 425px) {
+    .column-1 .images {
+        height: 10rem;
+    }
+}
+
 .column-1 img {
     height: 30rem;
+}
+
+@media screen and (max-device-width: 425px) {
+    .column-1 img {
+        height: 10rem;
+    }
 }
 
 .column-1 .content {
@@ -34,17 +60,105 @@
     margin-top: 10px;
 }
 
+@media screen and (max-device-width: 425px) {
+    .column-1 .content {
+        height: auto;
+        padding: 9px 14px;
+        margin-top: -2px;
+    }
+
+}
+
 .column-1 .content h4 {
     font-size: 21px;
     margin-bottom: 1rem;
 }
 
+@media screen and (max-device-width: 425px) {
+    .column-1 .content h4 {
+        font-size: 17px;
+        margin-bottom: 0.5rem;
+    }
+}
+
 .column-1 .content p {
     font-size: 15px;
+    white-space: break-spaces;
+
+}
+
+@media screen and (max-device-width: 425px) {
+    .column-1 .content p {
+        font-size: 13px;
+    }
+}
+
+
+.mobile-price {
+    display: none;
+}
+
+@media screen and (max-device-width: 425px) {
+    .mobile-price {
+        position: relative;
+        background: rgb(255 255 255);
+        height: 6rem;
+        border: 1px solid;
+        border-color: #ababab;
+        border-radius: 1px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 9px 15px;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+
+    .mobile-price .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .mobile-price .top h2 {
+        font-size: 24px;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-device-width: 425px) {
+    .mobile-price .top .icon i {
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-device-width: 425px) {
+    .mobile-price .bottom {
+        position: absolute;
+        bottom: 4px;
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #707070;
+    }
 }
 
 .column-2 {
     width: 34%;
+}
+
+@media screen and (max-device-width: 425px) {
+    .column-2 {
+        width: 100%;
+    }
 }
 
 .box-1 {
@@ -60,6 +174,24 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     padding: 9px 15px;
+}
+
+@media screen and (max-device-width: 425px) {
+
+    .box-1 {
+        position: relative;
+        background: rgb(255 255 255);
+        height: 10rem;
+        border: 1px solid;
+        border-color: #ababab;
+        border-radius: 1px;
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        padding: 9px 15px;
+    }
 }
 
 .box-1 .top {
@@ -117,22 +249,63 @@
     padding: 9px 15px;
 }
 
+@media screen and (max-device-width: 425px) {
+    .box-2 {
+        height: 10rem;
+        margin-top: 1rem;
+        margin-left: unset;
+        margin-bottom: unset;
+        padding: 0px 14px;
+    }
+}
+
 .box-2 .top {
     font-size: 22px;
     font-weight: 200;
     color: #4a4a4ab0;
 }
-.box-2 .profile{
+
+@media screen and (max-device-width: 425px) {
+    .box-2 .top {
+        font-size: 17px;
+        font-weight: 200;
+        color: #4a4a4ab0;
+    }
+}
+
+.box-2 .profile {
     display: flex;
     align-items: center;
     margin: 12px 0px;
 }
+
+@media screen and (max-device-width: 425px) {
+    .box-2 .profile h3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .box-2 .profile p {
+        font-size: 14px;
+    }
+}
+
 .box-2 img {
     width: 4.5rem;
     margin-right: 1rem;
     border-radius: 43px;
 }
-.chat button{
+
+@media screen and (max-device-width: 425px) {
+    .box-2 img {
+        width: 3.5rem;
+        margin-right: 1rem;
+        border-radius: 43px;
+    }
+}
+
+.chat button {
     width: 100%;
     height: 3rem;
     font-size: 16px;
@@ -141,6 +314,14 @@
     color: #003035;
     background: white;
 }
-.chat button:hover{
-    border-width:thick;
+
+@media screen and (max-device-width: 425px) {
+    .chat button {
+        height: 2.5rem;
+        font-size: 14px;
+    }
+}
+
+.chat button:hover {
+    border-width: thick;
 }

@@ -5,6 +5,13 @@
     width: 90%;
 }
 
+@media screen and (max-device-width: 425px) {
+    .posts {
+        margin: 0px 0px 0px;
+        width: 100%;
+    }
+}
+
 .post-header {
     display: flex;
     align-items: center;
@@ -17,11 +24,32 @@
     font-size: 25px;
 }
 
+@media screen and (max-device-width: 425px) {
+    .post-header h3 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-device-width: 425px) {
+    .posts a {
+        font-size: 11px;
+    }
+}
+
 .products {
     padding: 0rem 1rem 1rem 1rem;
-display: flex;
-justify-content: initial;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: initial;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-device-width: 425px) {
+    .products {
+        padding: unset;
+        justify-content: center;
+
+    }
 }
 
 .product {
@@ -34,28 +62,60 @@ flex-wrap: wrap;
     border-color: #9f9f9f;
     background: #fff;
 }
-.top img{
+
+@media screen and (max-device-width: 425px) {
+    .product {
+        height: 13rem;
+        width: 9rem;
+    }
+}
+
+.top img {
     width: auto;
     height: 10rem;
 }
-.top{
+
+@media screen and (max-device-width: 425px) {
+    .top img {
+        width: 8rem;
+        height: 7rem;
+    }
+}
+
+.top {
     padding-top: 9px;
 }
-.product .bottom{
+
+.product .bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1.2rem;
 }
-.bottom h4{
+
+.bottom h4 {
     font-size: 23px;
 }
-.fresh{
+
+@media screen and (max-device-width: 425px) {
+    .bottom h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .product .bottom p {
+        font-size: 14px;
+    }
+}
+
+.fresh {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
 }
-.fresh-post{
+
+.fresh-post {
     margin: 0px 66px 15px;
     height: auto;
     width: 90%;
