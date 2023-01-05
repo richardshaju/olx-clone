@@ -2,12 +2,17 @@ import { React, useEffect, useState, useContext, useNa } from 'react'
 import { FirebaseContext } from '../../Store/FirebaseContext'
 import { PostContext } from '../../Store/PostContext'
 import { useNavigate } from 'react-router-dom'
+import { LoadingContext } from '../../Store/LoadingContext'
 import './Posts.css'
+import Loading from '../Loading/Loading'
 function Posts() {
     const navigate = useNavigate()
     const { firebase } = useContext(FirebaseContext)
     const [products, setProducts] = useState([])
+   
     const { setpostDetails } = useContext(PostContext)
+    const {setloading} = useContext(LoadingContext)
+
     useEffect(() => {
         firebase.firestore().collection('products').get().then((snapshot) => {
             const allPost = snapshot.docs.map((product) => {
@@ -16,8 +21,8 @@ function Posts() {
                     id: product.id
                 }
             })
-
             setProducts(allPost)
+            setloading(true)
         })
 
     }, [])
@@ -31,11 +36,11 @@ function Posts() {
             </div>
             <div className="products">
                 {products.map(product => {
-                    return <div className="product" 
-                    onClick={() => {
-                        setpostDetails(product)
-                        navigate('/post')
-                    }} >
+                    return <div className="product"
+                        onClick={() => {
+                            setpostDetails(product)
+                            navigate('/post')
+                        }} >
                         <div className="top">
                             <img src={product.url} alt="" />
 
@@ -48,29 +53,6 @@ function Posts() {
                     </div>
                 })
                 }
-                <div className="product">
-                    <div className="top">
-                        <img src={require('../assets/image.png')} alt="" />
-
-                    </div>
-                    <div className="bottom">
-                        <h4>₹10,00,000</h4>
-                        <p>2018 - 50,000 km</p>
-                        <p style={{ color: '#999999' }}> Audi 2018 ...</p>
-                    </div>
-                </div>
-                <div className="product">
-                    <div className="top">
-                        <img src={require('../assets/image.png')} alt="" />
-
-                    </div>
-                    <div className="bottom">
-                        <h4>₹10,00,000</h4>
-                        <p>2018 - 50,000 km</p>
-                        <p style={{ color: '#999999' }}> Audi 2018 ...</p>
-                    </div>
-                </div>
-            
             </div>
 
         </div>

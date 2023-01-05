@@ -70,7 +70,7 @@ function Navbar() {
             </div>
             <div className='search-bar'>
                 <input type="text" placeholder='Find Cars, Mobile Phones, ...' />
-                <div className='search'>
+                <div className='search-product'>
                     <Search fill="#ffffff" width="25px"></Search>
                 </div>
             </div>
@@ -81,7 +81,7 @@ function Navbar() {
                     </a>
                     {account ? <div href="" onClick={() => { user ? LogOut() : navigate('/login') }}>{user ? 'Logout' : 'Login'} </div> : null}
                 </div>
-                <a href="/sell">
+                <div className='sell-parent'  onClick={() => { user ? navigate('/sell') : navigate('/login') }}>
                     <div className='sell' >
                         <div className="sell-title">
                             <SellButtonPlus />
@@ -89,7 +89,7 @@ function Navbar() {
                         </div>
                         <SellButton />
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     )

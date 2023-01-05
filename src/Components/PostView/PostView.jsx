@@ -14,6 +14,9 @@ function PostView() {
       })
     })
   }, [])
+  function giveAlert(){
+    alert("Can't available now")
+  }
   return (
     <div className='post-view'>
       <div className="column-1">
@@ -68,7 +71,7 @@ function PostView() {
             </div>
           </div>}
           <div className="chat">
-            <button>Chat with seller</button>
+            <button onClick={()=>{giveAlert()}} >Chat with seller</button>
           </div>
         </div>
       </div>

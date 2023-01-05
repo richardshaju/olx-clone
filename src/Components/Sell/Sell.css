@@ -5,6 +5,15 @@
     align-items: center;
     background: #00e8de;
 }
+@media screen and (max-device-width: 425px) {
+    .sell-page{
+        display: flex;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        background: #00e8de;
+    }
+}
 
 .sell-page .container {
     height: 500px;
@@ -54,7 +63,7 @@
     background: #000;
     border: none;
     transition: .5s;
-cursor: pointer;
+    cursor: pointer;
 }
 
 .login button:hover {

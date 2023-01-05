@@ -1,0 +1,78 @@
+.chat {
+    padding-top: 4rem;
+}
+
+.chat .parent {
+    margin: 2rem 4rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 4, 5, .2);
+    display: flex;
+}
+
+.chat .left {
+    width: 40%;
+}
+
+.chat .right {
+    width: 60%;
+    border-left:1px solid;
+    border-color: #a7a2a2;
+}
+
+.chat .left .head {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background: #ccd5d5ab;
+    align-items: center;
+    padding: 0px 10px;
+    border-bottom: 1px solid;
+    border-color: #979797;
+}
+
+.chat .left .head {
+    font-size: 21px;
+}
+
+.chat .left .options {
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 16px;
+    justify-content: space-around;
+}
+
+.chat .left .options .buttons {
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    width: 19rem;
+    margin-left: 2rem;
+}
+
+.chat .left .options p{
+    font-size: 14px;
+}
+
+.chat .left .options .buttons p{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 1px solid;
+    border-color: #363636;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+.chat .right .top{
+    
+}
