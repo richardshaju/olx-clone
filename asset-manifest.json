@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/olx-clone/static/css/main.bfc47146.css",
-    "main.js": "/olx-clone/static/js/main.9f362639.js",
+    "main.css": "/olx-clone/static/css/main.cb1b565c.css",
+    "main.js": "/olx-clone/static/js/main.dc921dcb.js",
     "static/js/787.4341f9cd.chunk.js": "/olx-clone/static/js/787.4341f9cd.chunk.js",
     "static/media/avatar.png": "/olx-clone/static/media/avatar.63974e8a796d2d6c464a.png",
     "static/media/banner_poster.webp": "/olx-clone/static/media/banner_poster.48faf203503b1628c3b6.webp",
     "index.html": "/olx-clone/index.html",
-    "main.bfc47146.css.map": "/olx-clone/static/css/main.bfc47146.css.map",
-    "main.9f362639.js.map": "/olx-clone/static/js/main.9f362639.js.map",
+    "main.cb1b565c.css.map": "/olx-clone/static/css/main.cb1b565c.css.map",
+    "main.dc921dcb.js.map": "/olx-clone/static/js/main.dc921dcb.js.map",
     "787.4341f9cd.chunk.js.map": "/olx-clone/static/js/787.4341f9cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfc47146.css",
-    "static/js/main.9f362639.js"
+    "static/css/main.cb1b565c.css",
+    "static/js/main.dc921dcb.js"
   ]
 }
