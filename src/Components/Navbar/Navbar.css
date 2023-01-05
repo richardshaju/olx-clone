@@ -71,6 +71,13 @@
         }
     }
 
+    @media screen and (max-device-width:768px) {
+        .logo svg {
+            height: 40px;
+            width: 47px;
+        }
+    }
+
     @media screen and (max-device-width: 425px) {
         .logo svg {
             height: 2.4rem;
@@ -119,13 +126,16 @@
             margin-left: 6rem
         }
     }
-    
+
     @media screen and (max-device-width: 768px) {
         .dropdown {
             height: 2rem;
+            width: 11rem;
+            margin-left: 5rem;
 
         }
     }
+
     select .visible {
         visibility: unset;
     }
@@ -184,6 +194,16 @@
         }
     }
 
+    @media screen and (max-device-width: 768px) {
+        .dropdown input {
+            height: 22px;
+            border: none;
+            width: 122px;
+            font-size: 12px;
+            padding-left: 0px;
+        }
+    }
+
     .country-search {
         display: flex;
         position: absolute;
@@ -228,19 +248,19 @@
             width: 31rem;
         }
     }
-    
+
     @media screen and (max-device-width: 1440px) {
         .navbar .options {
             width: 17rem;
         }
     }
-  
+
     @media screen and (max-device-width: 1024px) {
         .navbar .options {
             width: 13rem;
         }
     }
-  
+
 
     .locations {
         display: grid;
@@ -319,17 +339,20 @@
             padding-left: 5rem;
         }
     }
+
     @media screen and (max-device-width: 768px) {
         .search-bar {
-            padding-left: 4rem;
+            padding-left: 1rem;
 
         }
     }
+
     @media screen and (max-device-width: 425px) {
         .search-bar {
             padding-left: 0rem;
         }
     }
+
     @media screen and (max-device-width: 2560px) {
         .search-bar input {
             width: 50rem;
@@ -359,10 +382,12 @@
 
     @media screen and (max-device-width: 768px) {
         .search-bar input {
-            width: 15rem;
+            width: 14rem;
+            font-size: 13px;
             height: 2rem;
         }
     }
+
     @media screen and (max-device-width: 425px) {
         .search-bar input {
             padding-left: 0rem;
@@ -414,19 +439,21 @@
             width: 40px;
         }
     }
+
     @media screen and (max-device-width: 768px) {
-    .search-product {
-        margin-left: 14rem;
-        height: 36px;
-        width: 34px;
+        .search-product {
+            margin-left: 13rem;
+            height: 36px;
+            width: 34px;
+        }
     }
-}
+
     @media screen and (max-device-width: 425px) {
         .search-product {
             display: none;
         }
     }
-    
+
 
     @media screen and (max-device-width: 2560px) {
         .search {
@@ -577,11 +604,15 @@
         }
 
     }
+
     @media screen and (max-device-width : 768px) {
-    .right a {
-        margin-left: 1rem;
+        .right a {
+            margin-left: 1rem;
+            margin-right: 0rem;
+            font-size: 14px;
+        }
     }
-}
+
     @media screen and (max-device-width : 425px) {
         .right a {
             font-size: 13px;
@@ -631,12 +662,14 @@
             margin-top: 3rem;
         }
     }
-        @media screen and (max-device-width : 1024px) {
+
+    @media screen and (max-device-width : 1024px) {
         .right .sell-parent {
             margin-left: 0rem;
 
         }
     }
+
     @media screen and (max-device-width : 425px) {
         .right .sell-parent {
             font-size: 13px;
@@ -647,7 +680,7 @@
             margin-left: unset;
             margin-right: unset;
             align-items: center;
-            margin-top:0rem;
+            margin-top: 0rem;
         }
     }
 
@@ -668,6 +701,13 @@
             margin: 9px;
         }
 
+    }
+
+    @media screen and (max-device-width : 768px) {
+        .account svg {
+            height: 1rem;
+            margin: unset;
+        }
     }
 
     .account div {
@@ -758,6 +798,12 @@
         }
     }
 
+
+    @media screen and (max-device-width: 768px) {
+        .sell {
+            margin-left: 1rem;
+        }
+    }
     @media screen and (max-device-width: 425px) {
         .sell {
             position: unset;
@@ -803,7 +849,11 @@
             height: 36px;
         }
     }
-
+    @media screen and (max-device-width: 768px) {
+        .sell svg {
+            height: 28px;
+        }
+    }
     @media screen and (max-device-width: 425px) {
         .sell svg {
             height: 25px;
@@ -812,6 +862,11 @@
 
     .sell-title svg {
         height: 11px;
+    }
+    @media screen and (max-device-width: 768px) {
+        .sell-title svg {
+            height: 8px;
+        }
     }
 
     @media screen and (max-device-width: 425px) {
@@ -824,7 +879,12 @@
     .sell p {
         margin-left: 6px;
     }
-
+    @media screen and (max-device-width: 768px) {
+        .sell p {
+            margin-left: 3px;
+            font-size: 10px;
+        }
+    }
     @media screen and (max-device-width: 425px) {
         .sell p {
             margin-left: unset;

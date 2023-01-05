@@ -6,8 +6,23 @@
 
 @media screen and (max-device-width: 2560px) {
     .banner {
-        padding-top: 6.7rem;
+        padding-top: 4.7rem;
 
+    }
+}
+@media screen and (max-device-width: 1440px) {
+    .banner {
+        padding-top: 4.3rem;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .banner {
+        padding-top: 4.7rem;
+    }
+}
+@media screen and (max-device-width: 425px) {
+    .banner {
+        padding-top: 3.7rem;
     }
 }
 
@@ -34,6 +49,22 @@
 @media screen and (max-device-width: 2560px) {
     .category-list {
         FONT-SIZE: 22px;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .category-list {
+        FONT-SIZE: 17px;
+    }
+}
+@media screen and (max-device-width: 1024px) {
+    .category-list {
+        FONT-SIZE: 11px;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .category-list {
+        display: none;
     }
 }
 

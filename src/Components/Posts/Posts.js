@@ -46,8 +46,8 @@ function Posts() {
 
                         </div>
                         <div className="bottom">
-                            <h4>{product.price}</h4>
-                            <p>2018 - 50,000 km</p>
+                            <h4>₹{product.price}</h4>
+                            <p>{product.year}</p>
                             <p style={{ color: '#999999' }}>{product.proName}</p>
                         </div>
                     </div>
