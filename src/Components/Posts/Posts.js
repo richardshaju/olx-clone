@@ -47,7 +47,7 @@ function Posts() {
                         </div>
                         <div className="bottom">
                             <h4>₹{product.price}</h4>
-                            <p>{product.year}</p>
+                            <p>{product.yearOfPurchase}</p>
                             <p style={{ color: '#999999' }}>{product.proName}</p>
                         </div>
                     </div>

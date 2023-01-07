@@ -21,7 +21,7 @@ function Login() {
 
     return (
         <div className='login'>
-            <div className="container">
+            <div className="wrapper">
                 <div className="box">
                     <div className='top'>
                         <OlxLogo width="100px" height="100px" ></OlxLogo>

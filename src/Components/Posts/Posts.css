@@ -29,6 +29,14 @@
     }
 }
 
+
+@media screen and (max-device-width: 375px) {
+    .posts {
+        margin: 7px 6px;
+        width: 97%;
+    }
+}
+
 @media screen and (max-device-width: 320px) {
     .posts {
         margin: 14px 9px;
@@ -162,7 +170,7 @@ cursor: pointer;
 }
 @media screen and (max-device-width: 375px) {
     .product {
-        margin: 9px 11px;
+        margin: 9px 5px;
     }
 }
 @media screen and (max-device-width: 320px) {

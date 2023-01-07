@@ -27,7 +27,7 @@ function Sell() {
                     category,
                     price,
                     description,
-                    year,
+                    yearOfPurchase,
                     url,
                     userId : user.uid,
                     createdOn : date.toDateString()
@@ -38,11 +38,11 @@ function Sell() {
     }
     return (
         <div className='sell-page'>
-            <div className="container">
+            <div className="wrapper">
                 <div className="box">
                     <div className='top'>
                         <OlxLogo width="100px" height="100px" ></OlxLogo>
-                        <h3>Enter your details</h3>
+                        <h3>Enter Product details</h3>
                     </div>
                    
                         <div className="details">
@@ -54,7 +54,7 @@ function Sell() {
                             <input type="text" name='price' value={price} onChange={(e) => setprice(e.target.value)} placeholder='Price' />
                             
 
-                            <img width="5rem" src={image ? URL.createObjectURL(image) : ''} />
+                      {/* <img width="rem" src={image ? URL.createObjectURL(image) : ''} />  */}
 
                             <input type="file" name='mobile'
 
@@ -67,7 +67,6 @@ function Sell() {
                
                     <div className="footer">
                         <p>All your personal details are safe with us.</p>
-
                         <p>If you continue, you are accepting <br /> OLX Terms and Conditions and Privacy Policy</p>
                     </div>
                 </div>

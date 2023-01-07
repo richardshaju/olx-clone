@@ -1,28 +1,81 @@
-.sell-page{
+.sell-page {
     display: flex;
-    height: 45rem;
+    height: 100%;
     justify-content: center;
-    align-items: center;
-    background: #00e8de;
+
+    background: #15185a;
 }
-@media screen and (max-device-width: 425px) {
-    .sell-page{
+
+@media screen and (max-device-width: 2560px) {
+    .sell-page {
         display: flex;
-        height: auto;
-        width: 100%;
-        align-items: center;
-        background: #00e8de;
+        height: 91REM;
+        justify-content: center;
+        padding-top: 18rem;
+        background: #15185a;
+    }
+
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sell-page {
+        display: flex;
+        height: 50rem;
+        justify-content: center;
+        padding-top: 6rem;
+        background: #15185a;
     }
 }
 
-.sell-page .container {
-    height: 500px;
-    width: 35%;
-    display: flex;
-    border: solid;
-    border-width: 1px;
+@media screen and (max-device-width: 768px) {
+    .sell-page {
+        height: 38rem;
+        padding-top: 3rem;
+
+    }
 }
 
+@media screen and (max-device-width: 425px) {
+    .sell-page {
+        height: 38rem;
+        padding-top: 3rem;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .sell-page .wrapper {
+        height: 500px;
+        width: 20%;
+        display: flex;
+
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sell-page .wrapper {
+        height: 500px;
+        width: 35%;
+        display: flex;
+
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .sell-page .wrapper {
+        width: 52%;
+    }
+}
+@media screen and (max-device-width: 375px) {
+    .sell-page .wrapper {
+        width: 61%;
+
+    }
+}
+@media screen and (max-device-width: 320px) {
+    .sell-page .wrapper {
+        width: 74%;
+    }
+}
 .sell-page details {
     display: flex;
     justify-content: center;
@@ -33,16 +86,92 @@
     flex-direction: column;
 }
 
-.sell-page input {
-    width: 18rem;
-    height: 2.2rem;
-    border-width: 2px;
-    border: 2px solid #002f34;
-    border-radius: 1px;
-    font-size: 15px;
-    margin-bottom: 1rem;
-    padding-left: 10px;
+
+
+@media screen and (max-device-width: 2560px) {
+    .sell-page input {
+        width: 31rem;
+        height: 4.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 21px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
 }
+
+@media screen and (max-device-width: 1440px) {
+    .sell-page input {
+        width: 18rem;
+        height: 2.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .sell-page input {
+        width: 14rem;
+        height: 2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 11px;
+        margin-bottom: 0.6rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .sell-page textarea {
+        width: 31rem;
+        height: 4.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 21px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sell-page textarea {
+        width: 18rem;
+        height: 2.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .sell-page textarea {
+        width: 14rem;
+        height: 2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 11px;
+        margin-bottom: 0.6rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
 
 .sell-page .box {
     display: flex;
@@ -51,28 +180,105 @@
 }
 
 .sell-page .details {
-    margin-top: 21px;
+    margin-top: 40px;
     margin-bottom: 8px;
 }
 
-.login button {
-    width: 19rem;
-    height: 2rem;
-    margin-bottom:1rem;
-    color: #ffff;
-    background: #000;
-    border: none;
-    transition: .5s;
-    cursor: pointer;
+
+
+@media screen and (max-device-width: 2560px) {
+    .sell-page button {
+        width: 10rem;
+        height: 3rem;
+        border-radius: 4px;
+        font-size: 20px;
+        margin-top: 3rem;
+    }
 }
 
-.login button:hover {
-    font-weight: 700;
-    color: #000;
-    background: #108b74;
+@media screen and (max-device-width: 1440px) {
+    .sell-page button {
+        width: 8rem;
+        height: 2.4rem;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .sell-page button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: 4px;
+        font-size: 11px;
+    }
 }
 
-.sell-page .footer {
-    margin-top: 23px;
-    font-size: 12px;
+
+
+@media screen and (max-device-width: 2560px) {
+    .sell-page .footer {
+        font-size: 17px;
+        color: bisque;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sell-page .footer {
+        margin-top: 13px;
+        color: wheat;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .sell-page .footer {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-device-width: 2560px) {
+    .top svg {
+        height: 10rem;
+        width: 10rem;
+        fill: white;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .top svg {
+        height: 8rem;
+        width: 8rem;
+        fill: white;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .top svg {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .top h3 {
+        font-size: 24px;
+        color: antiquewhite;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .top h3 {
+        font-size: 20px;
+        color: antiquewhite;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .top h3 {
+        font-size: 13px;
+        color: antiquewhite;
+    }
 }

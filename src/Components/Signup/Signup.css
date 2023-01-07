@@ -1,18 +1,75 @@
-.sign-up {
-    display: flex;
-    height: 45rem;
-    justify-content: center;
-    align-items: center;
-    background: #00e8de;
+
+@media screen and (max-device-width: 2560px) {
+    .sign-up{
+        display: flex;
+        height: 91REM;
+        justify-content: center;
+        padding-top: 18rem;
+        background: #15185a;
+    }
+
 }
 
-.signup .container {
-    height: 572px;
-    width: 35%;
-    display: flex;
-    border: solid;
-    border-width: 1px;
+@media screen and (max-device-width: 1440px) {
+    .sign-up{
+        display: flex;
+        height: 46rem;
+        justify-content: center;
+        padding-top: 6rem;
+        background: #15185a;
+    }
 }
+
+@media screen and (max-device-width: 768px) {
+    .sign-up{
+        height: 38rem;
+        padding-top: 3rem;
+
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .sign-up{
+        height: 38rem;
+        padding-top: 3rem;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .sign-up .wrapper {
+        height: 500px;
+        width: 20%;
+        display: flex;
+
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sign-up .wrapper {
+        height: 500px;
+        width: 35%;
+        display: flex;
+
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .sign-up .wrapper {
+        width: 52%;
+    }
+}
+@media screen and (max-device-width: 375px) {
+    .sign-up .wrapper {
+        width: 61%;
+
+    }
+}
+@media screen and (max-device-width: 320px) {
+    .sign-up .wrapper {
+        width: 74%;
+    }
+}
+
 
 .sign-up details {
     display: flex;
@@ -34,6 +91,48 @@
     margin-bottom: 1rem;
     padding-left: 10px;
 }
+@media screen and (max-device-width: 2560px) {
+    .sign-up input {
+        width: 31rem;
+        height: 4.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 21px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sign-up input {
+        width: 18rem;
+        height: 2.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .sign-up input {
+        width: 14rem;
+        height: 2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 11px;
+        margin-bottom: 0.6rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
 
 .sign-up .box {
     display: flex;
@@ -46,14 +145,19 @@
     margin-bottom: 8px;
 }
 
+
+.sign-up .button{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 .sign-up button {
-    width: 19rem;
-    height: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom:1rem;
     color: #ffff;
     background: #000;
     border: none;
     transition: .5s;
+cursor: pointer;
 }
 
 .sign-up button:hover {
@@ -61,8 +165,53 @@
     color: #000;
     background: #108b74;
 }
+@media screen and (max-device-width: 2560px) {
+    .sign-up button {
+        width: 32rem;
+        height: 3rem;
+        border-radius: 4px;
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+}
 
-.sign-up .footer {
-    margin-top: 23px;
-    font-size: 12px;
-}                                                                                                                                               
+@media screen and (max-device-width: 1440px) {
+    .sign-up button {
+        width: 19rem;
+        height: 2rem;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .sign-up button {
+        width: 15rem;
+        height: 1.5rem;
+        border-radius: 4px;
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .sign-up .footer {
+        font-size: 17px;
+        color: bisque;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .sign-up .footer {
+        margin-top: 13px;
+        color: wheat;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .sign-up .footer {
+        font-size: 8px;
+    }
+}

@@ -7,6 +7,7 @@ function PostView() {
   const { postDetails } = useContext(PostContext)
   const { firebase } = useContext(FirebaseContext)
   useEffect(() => {
+    window.scrollTo(0, 0)
     const { userId } = postDetails
     firebase.firestore().collection('users').where('id', '==', userId).get().then((res) => {
       res.forEach(doc => {
@@ -18,6 +19,7 @@ function PostView() {
     alert("Can't available now")
   }
   return (
+    
     <div className='post-view'>
       <div className="column-1">
         <div class="images">

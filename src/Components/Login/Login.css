@@ -1,18 +1,74 @@
-.login{
-    display: flex;
-    height: 45rem;
-    justify-content: center;
-    align-items: center;
-    background: #00e8de;
+@media screen and (max-device-width: 2560px) {
+    .login{
+        display: flex;
+        height: 91REM;
+        justify-content: center;
+        padding-top: 18rem;
+        background: #15185a;
+    }
+
 }
 
-.container {
-    height: 500px;
-    width: 35%;
-    display: flex;
-    border: solid;
-    border-width: 1px;
+@media screen and (max-device-width: 1440px) {
+    .login{
+        display: flex;
+        height: 46rem;
+        justify-content: center;
+        padding-top: 6rem;
+        background: #15185a;
+    }
 }
+
+@media screen and (max-device-width: 768px) {
+    .login{
+        height: 38rem;
+        padding-top: 3rem;
+
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    .login{
+        height: 38rem;
+        padding-top: 3rem;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .login .wrapper {
+        height: 500px;
+        width: 20%;
+        display: flex;
+
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .login .wrapper {
+        height: 500px;
+        width: 35%;
+        display: flex;
+
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .login .wrapper {
+        width: 52%;
+    }
+}
+@media screen and (max-device-width: 375px) {
+    .login .wrapper {
+        width: 61%;
+
+    }
+}
+@media screen and (max-device-width: 320px) {
+    .login .wrapper {
+        width: 74%;
+    }
+}
+
 
 .login details {
     display: flex;
@@ -24,16 +80,48 @@
     flex-direction: column;
 }
 
-.login input {
-    width: 18rem;
-    height: 2.2rem;
-    border-width: 2px;
-    border: 2px solid #002f34;
-    border-radius: 1px;
-    font-size: 15px;
-    margin-bottom: 1rem;
-    padding-left: 10px;
+@media screen and (max-device-width: 2560px) {
+    .login input {
+        width: 31rem;
+        height: 4.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 21px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
 }
+
+@media screen and (max-device-width: 1440px) {
+    .login input {
+        width: 18rem;
+        height: 2.2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .login input {
+        width: 14rem;
+        height: 2rem;
+        border-width: 2px;
+        border: 2px solid #002f34;
+        border-radius: 1px;
+        font-size: 11px;
+        margin-bottom: 0.6rem;
+        padding-left: 10px;
+        background: white;
+    }
+}
+
 
 .login .box {
     display: flex;
@@ -45,10 +133,12 @@
     margin-top: 21px;
     margin-bottom: 8px;
 }
-
+.login .button{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 .login button {
-    width: 19rem;
-    height: 2rem;
     margin-bottom:1rem;
     color: #ffff;
     background: #000;
@@ -62,8 +152,53 @@ cursor: pointer;
     color: #000;
     background: #108b74;
 }
+@media screen and (max-device-width: 2560px) {
+    .login button {
+        width: 32rem;
+        height: 3rem;
+        border-radius: 4px;
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+}
 
-.login .footer {
-    margin-top: 23px;
-    font-size: 12px;
+@media screen and (max-device-width: 1440px) {
+    .login button {
+        width: 19rem;
+        height: 2rem;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-device-width: 768px) {
+    .login button {
+        width: 15rem;
+        height: 1.5rem;
+        border-radius: 4px;
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-device-width: 2560px) {
+    .login .footer {
+        font-size: 17px;
+        color: bisque;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-device-width: 1440px) {
+    .login .footer {
+        margin-top: 13px;
+        color: wheat;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .login .footer {
+        font-size: 8px;
+    }
 }
