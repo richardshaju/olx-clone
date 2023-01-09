@@ -30,7 +30,7 @@
 
 @media screen and (max-device-width: 425px) {
     .sign-up{
-        height: 38rem;
+        height: 46rem;
         padding-top: 3rem;
     }
 }
@@ -58,15 +58,15 @@
         width: 52%;
     }
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 425px) {
     .sign-up .wrapper {
-        width: 61%;
+        width: unset;
 
     }
 }
 @media screen and (max-device-width: 320px) {
     .sign-up .wrapper {
-        width: 74%;
+        width: unset;
     }
 }
 
@@ -212,6 +212,6 @@ cursor: pointer;
 
 @media screen and (max-device-width: 768px) {
     .sign-up .footer {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
