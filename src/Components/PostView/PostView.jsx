@@ -55,7 +55,7 @@ function PostView() {
               <i class="fa-regular fa-heart"></i>
             </div>
           </div>
-          <p>{postDetails.proName}</p>
+          <p className='proname'>{postDetails.proName}</p>
           <div className="bottom">
             <p>Kundoor mala</p>
             <p>Today</p>
