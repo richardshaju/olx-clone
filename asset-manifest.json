@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/olx-clone/static/css/main.0f6965a5.css",
+    "main.css": "/olx-clone/static/css/main.2792f3c6.css",
     "main.js": "/olx-clone/static/js/main.a8c05b0c.js",
     "static/js/787.4341f9cd.chunk.js": "/olx-clone/static/js/787.4341f9cd.chunk.js",
     "static/media/avatar.png": "/olx-clone/static/media/avatar.63974e8a796d2d6c464a.png",
     "static/media/banner_poster.webp": "/olx-clone/static/media/banner_poster.48faf203503b1628c3b6.webp",
     "index.html": "/olx-clone/index.html",
-    "main.0f6965a5.css.map": "/olx-clone/static/css/main.0f6965a5.css.map",
+    "main.2792f3c6.css.map": "/olx-clone/static/css/main.2792f3c6.css.map",
     "main.a8c05b0c.js.map": "/olx-clone/static/js/main.a8c05b0c.js.map",
     "787.4341f9cd.chunk.js.map": "/olx-clone/static/js/787.4341f9cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f6965a5.css",
+    "static/css/main.2792f3c6.css",
     "static/js/main.a8c05b0c.js"
   ]
 }
