@@ -48,13 +48,13 @@
 
 @media screen and (max-device-width: 2560px) {
     .category-list {
-        FONT-SIZE: 22px;
+        FONT-SIZE: 14px;
     }
 }
 
 @media screen and (max-device-width: 1440px) {
     .category-list {
-        FONT-SIZE: 17px;
+        FONT-SIZE: 11px;
     }
 }
 @media screen and (max-device-width: 1024px) {
@@ -97,7 +97,7 @@
 @media screen and (max-device-width: 2560px) {
     .image {
         background-position-x: right;
-        height: 26rem;
+        height: 18rem;
 
     }
 }

@@ -1,7 +1,7 @@
 @media screen and (max-device-width: 2560px) {
     .posts {
-        margin: 57px 70px 15px;
-        width: 95%;
+        margin: 34px 49px;
+        width: 95%; 
         height: auto;
         background-color: #ebeeef;
     }
@@ -9,10 +9,10 @@
 
 @media screen and (max-device-width: 1440px) {
     .posts {
-        margin: 60px 73px 15px;
+        margin: 29px 29px 15px;
         height: auto;
         background-color: #ebeeef;
-        width: 90%;
+        width: 88%;
     }
 }
 
@@ -92,7 +92,7 @@
     .products {
         padding: 0rem 1rem 1rem 1rem;
         display: flex;
-        justify-content: initial;
+        justify-content: center;
         flex-wrap: wrap;
     }
 }
@@ -101,7 +101,7 @@
     .products {
         padding: 0rem 1rem 1rem 1rem;
         display: flex;
-        justify-content: initial;
+        justify-content: center;
         flex-wrap: wrap;
     }
 }
@@ -119,10 +119,10 @@ cursor: pointer;
 @media screen and (max-device-width: 2560px) {
     .product {
         margin: 12px 11px;
-        height: 30rem;
+        height: 16rem;
         border-style: solid;
         border-radius: 4px;
-        width: 36rem;
+        width: 19rem;
         border-width: thin;
         border-color: #9f9f9f;
         background: #fff;
@@ -181,7 +181,7 @@ cursor: pointer;
 
 @media screen and (max-device-width: 2560px) {
     .top img {
-        height: 17rem;
+        height: 10rem;
     }
 }
 
@@ -235,7 +235,7 @@ cursor: pointer;
 
 @media screen and (max-device-width: 2560px) {
     .bottom h4 {
-        font-size: 40px;
+        font-size: 21px;
     }
 }
 
@@ -259,7 +259,7 @@ cursor: pointer;
 
 @media screen and (max-device-width: 2560px) {
     .bottom p {
-        font-size: 25px;
+        font-size: 13px;
     }
 }
 

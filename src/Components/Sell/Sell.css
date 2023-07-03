@@ -9,9 +9,8 @@
 @media screen and (max-device-width: 2560px) {
     .sell-page {
         display: flex;
-        height: 91REM;
+        height: 70REM;
         justify-content: center;
-        padding-top: 18rem;
         background: #15185a;
     }
 
@@ -46,7 +45,7 @@
 @media screen and (max-device-width: 2560px) {
     .sell-page .wrapper {
         height: 500px;
-        width: 20%;
+        width: 30%;
         display: flex;
 
     }

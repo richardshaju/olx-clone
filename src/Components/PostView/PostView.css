@@ -35,7 +35,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .column-1 .images {
-        height: 36rem;
+        height: 31rem;
     }
 }
 
@@ -67,7 +67,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .column-1 img {
-        height: 36rem;
+        height: 31rem;
     }
 }
 
@@ -121,7 +121,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .column-1 .content h4 {
-        font-size: 32px;
+        font-size: 23px;
     }
 }
 
@@ -153,7 +153,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .column-1 .content p {
-        font-size: 24px;
+        font-size: 16px;
         white-space: break-spaces;
     }
 }
@@ -266,7 +266,7 @@
 @media screen and (max-device-width: 2560px) {
 
     .box-1 {
-        height: 20rem;
+        height: 10rem;
     }
 }
 
@@ -320,7 +320,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .box-1 .top h2 {
-        font-size: 45px;
+        font-size: 26px;
 
     }
 }
@@ -342,7 +342,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .top .icon i {
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
@@ -404,7 +404,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .box-2 {
-        height: 23rem;
+        height: 12rem;
 
     }
 }
@@ -448,7 +448,7 @@
     .proname {
         font-weight: 400;
         color: #000000;
-        font-size: 33px;
+        font-size: 22px;
     }
 }
 
@@ -470,7 +470,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .box-2 .top {
-        font-size: 35px;
+        font-size: 21px;
         font-weight: 200;
         color: #4a4a4ab0;
     }
@@ -520,7 +520,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .box-2 img {
-        width: 7rem;
+        width: 4rem;
         margin-right: 1rem;
         border-radius: 53px;
     }
@@ -552,7 +552,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .profile h3 {
-        font-size: 2rem;
+        font-size: 17px;
     }
 }
 
@@ -570,7 +570,7 @@
 
 @media screen and (max-device-width: 2560px) {
     .profile p {
-        font-size: 1.5rem;
+        font-size: 17px;
     }
 }
 
@@ -598,8 +598,8 @@
 
 @media screen and (max-device-width: 2560px) {
     .chat button {
-        height: 5rem;
-        font-size: 23px;
+        height: 3rem;
+        font-size: 16px;
     }
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import './Footer.css'
 function Footer() {
+    var today = new Date()
+    var year = today.getFullYear()
     return (
         <div className='footer'>
             <div className='about'>
@@ -36,7 +38,7 @@ function Footer() {
             </div>
             <div className="copyright">
                 <p><span> Other Countries</span> Pakistan - South Africa - Indonesia</p>
-                <p>All rights reserved © 2006-2022 OLX</p>
+                <p>All rights reserved © 2006-{year} OLX</p>
             </div>
         </div>
     )
